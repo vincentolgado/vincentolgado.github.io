@@ -185,8 +185,16 @@ a:hover {
     height: auto;
     border-radius: 10px;
     object-fit: cover;
-    border: 3px solid #EEEEEE;
     display: inline-block;
+}
+.left-section > div {
+    text-align: center;
+    overflow: hidden;
+}
+
+.video-container iframe{
+    width: 100%;
+    height: 100%;
 }
 
 .gp-button {
@@ -238,6 +246,7 @@ img {
     height: auto;
     display: block;
 }
+
 
 /* Media Query for small screen sizes (e.g., phones) */
 @media (max-width: 768px) {
