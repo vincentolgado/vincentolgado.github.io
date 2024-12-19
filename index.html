@@ -1,109 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="index-page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark Vincent Olgado</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #2c2c2c;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            text-align: center;
-            max-width: 800px;
-            padding: 20px;
-            background-color: #333333;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            object-fit: cover;
-            border: 3px solid #ffffff;
-        }
-
-        p {
-            font-size: 1em;
-            line-height: 1.6;
-            margin: 10px 0;
-        }
-
-        .highlight {
-            color: #ffcc00;
-        }
-
-        a {
-            color: #ffcc00;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .nav {
-            margin-top: 20px;
-        }
-
-        .nav a {
-            margin: 0 10px;
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        .nav a:hover {
-            color: #ffcc00;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="nav">
-                <a href="index.html">About me</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Resume</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </header>
+    <div>
+        <div class="header-container">
+            <header>
+                <div class="nav">
+                    <a href="index.html">About me</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </header>
+        </div>
 
-        <h1>HELLO!</h1>
-        <img src="images/profile_1.jpg" alt="Mark Vincent Olgado" class="profile-pic">
-        <p>I'm <span class="highlight">Mark Vincent Olgado</span>,</p>
-        <p>
-            I am an indie game developer passionate about creating engaging and innovative gaming experiences.
-            With a strong background in programming and a love for design, I have independently developed and
-            published games like <em>Mega Swiper</em> on the Google Play Store.
-        </p>
-        <p>
-            I specialize in 2D game development using engines like Godot and Unity, and I'm continuously exploring new ideas to captivate players.
-        </p>
-        <p>
-            My goal is to craft games that challenge, entertain, and leave a lasting impression.
-        </p>
-        
-        <footer>
-            Reach me at <a href="mailto:vince.olgado@gmail.com">vince.olgado@gmail.com</a> or <a href="#">through here</a>.
-        </footer>
-        
+
+        <div class="container-index">
+            <div class="left-section">
+                <h1>HELLO!</h1>
+                <img src="images/profile_1.jpg" alt="Mark Vincent Olgado" class="profile-pic">
+                <p>I'm <span class="highlight">Mark Vincent Olgado</span>,</p>
+            </div>
+            
+            <div class="right-section">
+                <p>
+                    I am a <b>developer</b> passionate about creating engaging and innovative software or gaming experiences.
+                    With a strong background in programming and a love for design, I have independently developed and
+                    published games like <em>Mega Swiper</em> on the Google Play Store.
+                    
+                </p>
+                <p>
+                    My goal is to create software that is both practical and impactful, 
+                    and to design games that offer challenges, entertainment, and leave a memorable experience.
+                </p>
+            </div>
+        </div>
+
+        <div class="featured">
+            <h2>Featured</h2>
+
+        </div>
+        <div class="footer-container">
+            <header>
+                <p> Reach me at <span class="highlight"><a href="mailto:vince.olgado@gmail.com">vince.olgado@gmail.com</a></span> 
+                    or <span class="highlight"><a href="contact.html">through here</a></span> </p>
+            </header>
+        </div>
     </div>
 </body>
 </html>
