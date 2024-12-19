@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+    <script src="scripts.js"></script>
     <div>
         <div class="header-container">
             <header>
-                <div class="nav">
-                    <a href="../">About me</a>
-                    <a href="../portfolio">Portfolio</a>
-                    <a href="../resume">Resume</a>
-                    <a href="../contact">Contact</a>
+                <div class="burger-menu" onclick="toggleNav()">☰</div>
+                <div class="nav" id="navbar">
+                    <a href="./"><b>Home</b></a>
+                    <a href="projects"><b>Projects</b></a>
+                    <a href="about-me"><b>About me</b></a>
+                    <a href="contacts"><b>Contacts</b></a>
                 </div>
             </header>
         </div>
