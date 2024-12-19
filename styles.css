@@ -4,14 +4,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #222831;
-    color: #ffffff;
+    color: #EEEEEE;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
 }
 
-.double-container, .header-container, .container, .container-index, .container-projects, .footer-container{
+.container-double, .double-container, .header-container, .container, .container-index, .container-projects, .footer-container{
     text-align: center;
     max-width: 100%;
     padding: 20px;
@@ -39,11 +39,11 @@ p {
 }
 
 .highlight {
-    color: #ffcc00;
+    color: #76ABAE;
 }
 
 a {
-    color: #ffcc00;
+    color: #76ABAE;
     text-decoration: none;
 }
 
@@ -57,12 +57,12 @@ a:hover {
 
 .nav a {
     margin: 0 10px;
-    color: #ffffff;
+    color: #EEEEEE;
     text-decoration: none;
 }
 
 .nav a:hover {
-    color: #ffcc00;
+    color: #76ABAE;
 }
 
 /* Layouts */
@@ -74,14 +74,34 @@ a:hover {
 }
 
 .container {
-    max-width: 95%;
+    max-width: 90%;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 15px;
 }
 
+.container-double {
+    max-width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.container-small {
+    width: 50%;
+    height: 300px;
+    padding: 10px;
+    background-color: #31363F;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(118, 171, 174, 0.2);
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
 .container-index {
-    max-width: 95%;
+    max-width: 90%;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 15px;
@@ -89,7 +109,7 @@ a:hover {
 }
 
 .container-projects {
-    max-width: 95%;
+    max-width: 90%;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 15px;
@@ -98,13 +118,12 @@ a:hover {
 
 .featured {
     text-align: center;
-    max-width: 100%;
+    max-width: 90%;
     padding: 1px;
     background-color: #31363F;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
-    max-width: 95%;
     margin-bottom: 15px;
 }
 
@@ -124,41 +143,50 @@ a:hover {
 .skills-list {
    display: inline-table;
    text-align: center;
-   width: 45%;
+   width: 35%;
    margin: 0 10px;
 }
-
-
-.gp-button {
-    all: unset;
-    cursor: pointer;
-    padding: 0;
-    border: none;
-    background: none;
-    display: inline;
+.skills-list p {
+    line-height: 1.2;
+    margin: 0;
 }
-
-.gp-button img {
-    display: block;
-}
-
 
 /* Profile Pic */
 .profile-pic {
     width: 250px;
+    height: auto;
+    max-width: 100%;
     border-radius: 50%;
     margin-bottom: 20px;
     object-fit: cover;
-    border: 3px solid #ffffff;
+    border: 3px solid #EEEEEE;
     display: inline-block;
 }
+
 .project-image {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     border-radius: 10px;
     object-fit: cover;
-    border: 3px solid #ffffff;
+    border: 3px solid #EEEEEE;
     display: inline-block;
 }
+
+.gp-button {
+    background-color: transparent; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+    display: inline-block; 
+}
+
+.gp-button img {
+    display: block; 
+    width: 100px; 
+    height: auto; 
+}
+
 
 /* Contact List */
 .contact-list {
@@ -180,10 +208,48 @@ a:hover {
 }
 
 .contact-list a {
-    color: #ffcc00;
+    color: #76ABAE;
     text-decoration: none;
 }
 
 .contact-list a:hover {
     text-decoration: underline;
+}
+
+/* Make sure images scale with the display */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Media Query for small screen sizes (e.g., phones) */
+@media (max-width: 768px) {
+    .container-projects {
+        flex-direction: column;
+    }
+    .container-index {
+        flex-direction: column;
+    }
+    .container-small {
+        width: 100%;
+        height: 350px;
+        padding: 10px;
+        background-color: #31363F;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(118, 171, 174, 0.2);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .container-double {
+
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .left-section, .right-section {
+        max-width: 100%; /* Make both sections full width */
+        flex: none; /* Prevent them from taking equal width */
+    }
 }
